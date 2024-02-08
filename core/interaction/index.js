@@ -42,3 +42,13 @@ var conteneurTitre = document.getElementById('conteneurTitre');
 
 
 conteneurTitre.appendChild(titre);
+
+
+function envoyerFormulaire() {
+    if (document.getElementById('cgv').checked) {
+        alert('Votre formulaire a bien été envoyé!');
+    } else {
+        alert('Veuillez accepter les conditions générales de vente avant d\'envoyer le formulaire.');
+    }
+}
+

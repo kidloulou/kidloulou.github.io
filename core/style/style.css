@@ -4,10 +4,6 @@
     --main-bg-width: 100%;
 }
     
-  
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
 
   * {
     margin: var(--main-bg-color);
@@ -18,6 +14,7 @@
   }
   body{
     background-color: #F8FAE5;
+    
   }
 
 
@@ -37,7 +34,6 @@
     display:flex;
     padding: 0;
     color: black;
-    
     padding: 5px;
 }
 
@@ -275,4 +271,65 @@ footer {
     text-align: center;
     text-decoration: underline;
     margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+
+#formulaire {
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+#envoyer {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.CGV{
+    text-align: center;
+}
+
+.text-form{
+    text-align: center;
+    margin-bottom:75px;
+}
+
+.dt{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.CGV{
+    text-align: center;
+
 }

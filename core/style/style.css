@@ -1,37 +1,34 @@
-:root{
+:root {
     --main-bg-color: #d6d6d6;
     --main-bg-margin: 0;
     --main-bg-width: 100%;
 }
-    
 
-  * {
+* {
     margin: var(--main-bg-color);
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     text-decoration: none;
-  }
-  body{
+}
+
+body {
     background-color: #F8FAE5;
-    
-  }
+}
 
-
-  .nav-bar{
-    background-color:var(--main-bg-color) ;
+.nav-bar {
+    background-color: var(--main-bg-color);
     display: block;
     width: var(--main-bg-width);
     height: 50px;
     padding: 15px;
 }
 
-
-.nav-mots a{
+.nav-mots a {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    display:flex;
+    display: flex;
     padding: 0;
     color: black;
     padding: 5px;
@@ -39,23 +36,23 @@
 
 li:hover {
     background-color: rgb(101, 98, 98);
-    transition : 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 li:hover a {
-    color : white;
+    color: white;
 }
 
-.active{
+.active {
     background-color: rgb(101, 98, 98);
-    color : white !important;
+    color: white !important;
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding:0;
+    padding: 0;
 }
 
 #carousel {
@@ -86,7 +83,7 @@ ul{
     cursor: pointer;
     top: 175px;
     background-size: cover;
-    color:var(--main-bg-color) ;
+    color: var(--main-bg-color);
 }
 
 #g {
@@ -117,25 +114,21 @@ ul{
     transition: all 0.3s ease;
 }
 
-.titre{
+.titre {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 60px;
     text-decoration: underline;
-
-
 }
 
-
-.container{
-    display:grid;
+.container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
     align-items: center;
 }
 
-.contenu{
-   
+.contenu {
     align-items: center;
     border: 4px solid rgb(205, 203, 203);
     background-color: rgba(0, 0, 0, 0.183);
@@ -144,19 +137,18 @@ ul{
     flex-direction: column;
     justify-content: center;
     color: #fff9f9;
-    border-left:20px ;
+    border-left: 20px;
     margin-left: 10px;
     border-radius: 10px;
-    
 }
 
-.video{
+.video {
     padding: 10px;
     align-items: center;
     display: flex;
 }
 
-.sous-titre{
+.sous-titre {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -177,8 +169,8 @@ th {
     background-color: #f2f2f2;
 }
 
-.tableau{
-    margin-bottom:200px ;
+.tableau {
+    margin-bottom: 200px;
 }
 
 footer {
@@ -193,7 +185,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .social-links a {
@@ -202,38 +193,34 @@ footer {
     margin: 0 10px;
 }
 
-#conteneurTitre{
+#conteneurTitre {
     text-align: center;
     margin-bottom: 55px;
     text-decoration: underline;
-
 }
 
-.maintenance{
+.maintenance {
     text-align: center;
     color: red;
     font-size: 35px;
     font-weight: bold;
 }
 
-.test{
+.test {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 60px;
     text-decoration: underline;
 }
 
-.maintenance-text{
+.maintenance-text {
     text-align: center;
     color: #000000;
     font-weight: bold;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 110px;
-    
 }
-
-
 
 .cards-container {
     display: flex;
@@ -243,7 +230,7 @@ footer {
 }
 
 .card {
-    width: calc(33.3333% - 30px); 
+    width: calc(33.3333% - 30px);
     background-color: #fff;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
@@ -266,8 +253,7 @@ footer {
     margin: 5px 0;
 }
 
-
-.Titre{
+.Titre {
     text-align: center;
     text-decoration: underline;
     margin-top: 40px;
@@ -280,7 +266,6 @@ footer {
     align-items: center;
     margin-top: 0;
 }
-
 
 #formulaire {
     align-items: center;
@@ -300,8 +285,6 @@ input, textarea {
     border-radius: 5px;
 }
 
-
-
 #envoyer {
     width: 100%;
     padding: 10px;
@@ -314,22 +297,82 @@ input, textarea {
     margin-top: 15px;
 }
 
-.CGV{
+.CGV {
     text-align: center;
 }
 
-.text-form{
+.text-form {
     text-align: center;
-    margin-bottom:75px;
+    margin-bottom: 75px;
 }
 
-.dt{
+.dt {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.CGV{
+.CGV {
     text-align: center;
+}
 
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-bar {
+        padding: 10px;
+    }
+
+    #carousel {
+        height: 300px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 40px;
+        top: 150px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .contenu,
+    .video {
+        margin-left: 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .social-links a {
+        margin: 5px;
+    }
+
+    #container-form {
+        margin-top: 20px;
+    }
+
+    #formulaire {
+        max-width: 100%;
+    }
+
+    .card {
+        width: calc(50% - 15px);
+    }
+
+    .Titre {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
 }
